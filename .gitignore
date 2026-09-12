@@ -1,0 +1,10 @@
+# Local archives
+*.zip
+
+# Local video backup
+/removelogo1/
+
+# Video conversion backup directories
+/namo-video-originals-*/
+
+/prepare_videos.sh
