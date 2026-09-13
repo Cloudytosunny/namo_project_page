@@ -12,7 +12,11 @@
     });
   }
 
-  if (!("IntersectionObserver" in window)) return;
+  const useManualPlayback = window.matchMedia(
+  "(max-width: 900px), (pointer: coarse)"
+).matches;
+
+if (useManualPlayback || !("IntersectionObserver" in window)) return;
 
   const observer = new IntersectionObserver(
     (entries) => {
